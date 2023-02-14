@@ -1,0 +1,110 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>diziler ve object uygulaması</title>
+</head>
+<body>
+    
+    <script>
+        /*
+
+        #1: Bir personelin şağıdaki bilgilerini object içinde saklayınız.
+
+        **  ad        :Ali
+        **  soyad     :Yılmaz
+        **  cinsiyet  :Erkek
+        **  telefon   :02325713893
+        **  adres     :Köprübaşı/Manisa
+        **  meslek    :Yazılım Test Uzamanı
+        **  diller    :İngilizce,almanca
+        **  hobiler   : sinema,spor,kitap okumak
+
+        #2: Bu personel kaç dil bilmektedir?
+        #3: Bu perasonelin hobilerini al alta yazınız?
+        #4: 3 elemanlı bir personelin bilgi listesini oluşturunuz.
+
+        */
+
+        var ali = {
+            ad:'Ali',
+            soyad:'Yılmaz',
+            cinsiyet:'Erkek',
+            telefon:'02365713893',
+            adres:'Köprübaşı/Manisa',
+            meslek:'Yazılım Test Uzmanı',
+            diller:['İngilizce','Almanca'],
+            hobiler:['Sinema','spor','kitap okumak'],
+
+
+        };
+        console.log(ali.diller.length);
+         
+        
+        ali.hobiler.forEach(function(hobi){
+         console.log(hobi);
+         
+         });
+
+         var personel =[
+         {
+            ad:'Ali',
+            soyad:'Yılmaz',
+            cinsiyet:'Erkek',
+            telefon:'02365713893',
+            adres:'Köprübaşı/Manisa',
+            meslek:'Yazılım Test Uzmanı',
+            diller:['İngilizce','Almanca'],
+            hobiler:['Sinema','spor','kitap okumak'],
+
+
+         },
+         {
+            ad:'Mehmet',
+            soyad:'Yılmaz',
+            cinsiyet:'Erkek',
+            telefon:'02365713893',
+            adres:'Köprübaşı/Manisa',
+            meslek:'Yazılım  Uzmanı',
+            diller:['İngilizce','Almanca'],
+            hobiler:['Sinema','spor','kitap okumak'],
+
+
+         },
+         {
+            ad:'Pınar',
+            soyad:'Yılmaz',
+            cinsiyet:'Kadın',
+            telefon:'02365713893',
+            adres:'Köprübaşı/Manisa',
+            meslek:'Personel Müdürü',
+            diller:['İngilizce','Almanca','Fransızca'],
+            hobiler:['Sinema','spor','kitap okumak'],
+
+
+         }
+
+
+         ];
+         personel.forEach(function(personel){
+            console.log('****************************')
+            console.log(personel.ad+ ' '+personel.soyad);
+            personel.diller.forEach(function(dil){
+                console.log(dil);
+            });
+            console.log('****************************')
+         });
+         
+
+
+    </script>
+
+
+
+
+
+
+</body>
+</html>

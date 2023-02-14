@@ -1,0 +1,76 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uygulama</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container mt-2">
+        <div class="row"> 
+            <div class="col-md-5">
+                <div class="card">
+                    <img  class="card-img-top" src="" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <a href="#" class="btn btn-primary">Read More</a>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+        
+    <script>
+
+        var models =[
+        
+        {
+            name   : 'Mazda CX-3',
+            image  :'mazdaCX3.jpg',
+            link   :'https://www.arabam.com/ilan/galeriden-satilik-mazda-cx-3-1-5-sky-d-power-sense-plus/2016-cikisli-hatasiz-cx-3/21644701'
+        },
+        {
+            name   :'BMW 418d',
+            image  :'BMW 418d.jpg.webp',
+            link   :'https://www.sahibinden.com/ilan/vasita-otomobil-bmw-rocco-motors-2017-4.18d-gran-coupe-m-sport-boyasiz-1067606336/detay'
+        },
+        {
+          
+            name   :'Volvo S60',
+            image  :'volvoS60.avif',
+            link   :'https://www.volvocars.com/tr/cars/s60/'
+        }
+        
+
+        
+        ];
+
+        setInterval(function(){
+
+       
+
+
+     var index =  Math.floor ( Math.random()*models.length);
+     var img = document.querySelector('.card-img-top');
+     var title =document.querySelector('.card-title');
+     var a =document.querySelector('a');
+     
+
+     img.setAttribute('src', models[index].image);
+     a.setAttribute('href', models[index].link);
+     title.textContent=models[index].name;
+       
+    
+    
+    },1000);
+    
+    </script>
+
+</body>
+</html>

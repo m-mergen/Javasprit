@@ -1,0 +1,42 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ozetleme Fonsiyonları</title>
+</head>
+<body>
+    <script>
+        /*
+
+        Cümle   Özetleme Uygulaması
+
+        ** Bir cümle içinden istenilen karakter
+        sayısına göre bir özet çıkarılsın.Ancak bölünecek
+        nokta bir kelime olamaz.
+        */
+        var cumle = 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum,non.';
+    
+        var maxKarakter = 27;
+        var ozetcumle = [];
+
+        if (maxKarakter>cumle.length){
+            console.log(cumle);
+        }else{
+            var kelimeler =cumle.split(' ');
+            var toplamKarakter =0;
+            for (var i=0; i<kelimeler.length;i++) {
+                ozetcumle.unshift(kelimeler[i]);
+                toplamKarakter+=kelimeler[i].length;
+
+                if (toplamKarakter>maxKarakter){
+                    break;
+                }
+            }
+        }
+        console.log(ozetcumle.join(' ')+ '...');
+    </script>   
+    
+</body>
+</html>

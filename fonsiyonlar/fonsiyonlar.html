@@ -1,0 +1,61 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fonsiyonlar</title>
+</head>
+<body>
+    <script>
+        /*
+        function topla(a,b){
+            return a+b;   
+        }
+
+        var sonuc =topla (10,20);
+        console.log(sonuc);
+
+        function çarp(c,d){
+            return c*d;
+        
+        }
+        var sonuc1= çarp(20,30);
+        console.log(sonuc1);
+
+        */
+
+        var now =2023;
+        function yashesapla(yas){
+            return now-yas;
+        }
+        var ahmet =yashesapla(1991);
+        var mesut =yashesapla(1990);
+        console.log(ahmet);
+        console.log(mesut);
+
+
+        function ememklilikHesapla(ad,yas){
+            var k_yas =yashesapla(yas);
+            var emeklilik = 65 - k_yas;
+            if (emeklilik>0){
+                console.log(ad + ' '+emeklilik+ ' '+'yıl sonra emekli olabilir'); 
+            }else {
+                console.log(ad  + ' zaten '+
+                 (emeklilik*-1)   + ' yıl önce emekli olmuş')
+            }
+
+            
+        }
+        ememklilikHesapla('çınar',1991);
+        ememklilikHesapla('ali',1950);
+
+
+
+    </script>
+
+
+
+
+</body>
+</html>

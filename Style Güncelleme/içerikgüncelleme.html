@@ -1,0 +1,39 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>İçerik Güncelleme</title>
+    <style>
+
+        .active{
+            color:rgb(223, 223, 34);
+            font-size: 45px;
+            border: 1px solid blue;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1  class="title" id="title">Best free stock photos in one place.</h1>
+    <h3 id="sub-title">Search for free photos...</h3>
+
+    <img src="resim.jpg" width="500">
+
+<script>
+    var title =document.getElementById('title');
+ title.classList.add ('active');
+ console.log(title.classList);
+/*title.style.color='yellow';
+ title.style.fontSize='45px';
+ title.style.border ='1px solid blue';
+ title.style.padding ='10px'
+
+ */
+
+
+</script>
+
+</body>
+</html>

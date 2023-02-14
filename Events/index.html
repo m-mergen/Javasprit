@@ -1,0 +1,53 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event</title>
+</head>
+<body>
+    <h1 id="title">Best free stock photos in one place.</h1>
+    
+    <h3 id="sub-title">Searce for free photos.</h3>
+    
+    <button id="changeText">Change</button>
+    
+    <button id="changeText2">Change</button>
+    
+    <p>Lorem ipsum dolor</p>
+
+    <ul>
+        <li>item 1</li>
+        <li>item 2</li>
+        <li>item 3</li>
+    </ul>
+    <script>
+       
+       
+        var btn = document.querySelector('#chanceText');
+        var btn2 = document.querySelector('#chanceText2');
+      
+        var p =document.querySelector('p');
+
+       
+
+        var h1=document.querySelector('#title');
+
+        h1.addEventListener('click',changeColor);
+        
+        function changeColor () {
+            h1.style.color ='red';
+        }
+
+        var lis= document.querySelector('li');
+        for (var i=0; i<lis.lenght; i++) {
+        lis[i].addEventListener('click',function()
+        {
+          this.style.color ='blue';
+          this.style.textDecoration ='underline';
+        });
+        }
+    </script>
+</body>
+</html>
