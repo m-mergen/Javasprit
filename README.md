@@ -1,9 +1,9 @@
-# javasprit
+# Javascript
 
-<h1>Javasprit ilgili çalışmalarım</h1>
+<h1>Javascript ilgili çalışmalarım</h1>
 
 
-<p>Javasprit ile ilgili
+<p>Javascript ile ilgili
 değişkenler,diziler,döngüler,fonsiyonlar,koşul ifdeleri,
 object,operatörler,style güncelleme.
 </p>
